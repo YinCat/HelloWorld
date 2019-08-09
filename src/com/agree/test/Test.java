@@ -66,11 +66,20 @@ public class Test {
 //		System.out.println(list);
 //		String data = "2.0";
 //		String data1 = "2";
-		String s = null;
-		System.out.println(s.isEmpty());
+//		String s = null;
+//		System.out.println(s.isEmpty());
 //		Long l = Long.parseLong("2.0");
 //		System.out.println(new BigDecimal("1.000").stripTrailingZeros().toPlainString());
 //		System.out.println(new BigDecimal("0.100").toString());
 //		System.out.println(String.valueOf(new BigDecimal("0.100")));
+		outer:for (int i = 0; i < 5; i++) {
+			System.out.println(i);
+			for (int j = 10; j < 15; j++) {
+				System.out.println(j);
+				if (j == 13) {
+					break outer;
+				}
+			}
+		}
 	}
 }
